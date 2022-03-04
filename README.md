@@ -15,7 +15,7 @@ The Blog app is a classic example of a blog website. It's a functional website t
 
 To get a local copy up and running follow these simple example steps.
 
-git clone https://github.com/Somdotta07/My-Blog-App.git
+git clone https://github.com/RolandM99/Blog-website.git
 
 cd BlogApp
 
@@ -90,7 +90,7 @@ $ bundle exec rspec
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Somdotta07/My-Blog-App/issues).
+Feel free to check the [issues page](https://github.com/RolandM99/Blog-website.git/issues).
 
 ## Show your support
 
