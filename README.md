@@ -17,7 +17,7 @@ To get a local copy up and running follow these simple example steps.
 
 git clone https://github.com/RolandM99/Blog-website.git
 
-cd BlogApp
+`cd Blog-webse`
 
 ### Prerequisites
 
@@ -45,10 +45,10 @@ rails db:migrate
 Start server with:
 
 ```
-rails server
+rails s
 ```
 
-Open http://localhost:3000/ in your browser.
+This will Open http://localhost:3000/ in your browser.
 
 ### Run tests
 
@@ -59,12 +59,6 @@ npm i
 ```
 
 Install rspec with:
-
-```
-bundle install
-```
-
-and
 
 ```
 rails generate rspec:install
