@@ -18,4 +18,16 @@ RSpec.describe Post, type: :model do
   it 'return all the comments for a post' do
     expect(Comment.count).to eql 0
   end
+
+  describe 'Should test methods in post model' do
+    it 'Should retun the recent comments' do
+      expect(subject.recent_comments).to eq(subject.comments.last(5))
+    end
+  end
+
+  describe 'Should test methods in post model' do
+    it 'Should retun the update post' do
+      expect(Post.count).to eq 0
+    end
+  end
 end

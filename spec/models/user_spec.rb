@@ -11,12 +11,16 @@ RSpec.describe User, type: :model do
       expect(subject).to_not be_valid
     end
 
-    # it 'return the three latest posts for a user' do
-    #   expect(User).to eql 3
-    # end
-
     it 'return all the posts for a user' do
       expect(User.count).to eql 0
+    end
+  end
+
+  describe 'Should test recent post method' do
+    before { 4.times { |post_nb| Post.create(author_id: subject.id, title: "This is post #{post_nb}") } }
+
+    it 'User should have three recent posts' do
+      expect(subject.recent_posts).to eq(subject.posts.last(3))
     end
   end
 end
