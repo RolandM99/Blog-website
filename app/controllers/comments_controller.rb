@@ -12,9 +12,11 @@ class CommentsController < ApplicationController
     @new_comment.update_comments_counter
 
     if @new_comment.save
+      flash.alert = 'Successful created'
       redirect_to user_post_path(@post.id, Post.find(params[:post_id]))
     else
-      render :new
+     flash.now[:error] = 'Failed to create comment'
+     render :new
     end
   end
 
