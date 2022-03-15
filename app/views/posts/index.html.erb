@@ -1,6 +1,6 @@
-<div class="user-container">
+<div class="post-user-container">
     <div class="user-data">
-        <div class="user-img">
+        <div class="post-user-img">
       <%= image_tag("Tom.png", width:'150px', height:'170px') %>
     </div>
       <h2><%= @user.name%></h2>
@@ -22,12 +22,12 @@
     <%end%>
   </div>
 <%end%>
-<div>
-  <button class="button"> <%= link_to "Create a post",  new_user_post_path(@user), {:class => "button_class"} %> </button>
-</div>
+
 <div class="button-div">
   <button class="button">
     Pagination
   </button>
-
+  <div>
+    <button class="button"> <%= link_to "Create a post",  new_user_post_path(@user), {:class => "button_class"} %> </button>
+</div>
 </div>
