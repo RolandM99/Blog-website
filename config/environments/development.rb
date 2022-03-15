@@ -50,6 +50,9 @@ Rails.application.configure do
   # Tell Active Support which deprecation messages to disallow.
   config.active_support.disallowed_deprecation_warnings = []
 
+  # Set up the default URL options for the Devise mailer in each environment.
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
 
