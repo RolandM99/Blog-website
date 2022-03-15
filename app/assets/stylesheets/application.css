@@ -22,7 +22,8 @@
   justify-content: center;
 }
 
-#user_email, #user_password {
+#user_email,
+#user_password {
   width: 100%;
   height: 30px;
 }
