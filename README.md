@@ -9,7 +9,7 @@ The Blog app is a classic example of a blog website. It's a functional website t
 ## Built With
 
 - Ruby
-- Ruby on Rails
+- Ruby on Rails(RoR)
 
 ## Getting Started
 
