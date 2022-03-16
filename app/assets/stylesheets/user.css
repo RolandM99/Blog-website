@@ -10,6 +10,11 @@ body {
   align-items: center;
 }
 
+#img-user {
+  width: 150px;
+  height: 150px;
+}
+
 .user-container-2 {
   display: flex;
   justify-content: space-around;
