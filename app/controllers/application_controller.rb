@@ -4,8 +4,6 @@ class ApplicationController < ActionController::Base
   # before_action :authenticate_user!
   before_action :update_allowed_parameters, if: :devise_controller?
 
-  # before_action :update_allowed_parameters, if: :devise_controller?
-
   protected
 
   def update_allowed_parameters
@@ -15,9 +13,7 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  # protected
-
-  # def configure_permitted_parameters
-  #   devise_parameter_sanitizer.permit(:sign_up, keys: [:email, :name, :password, :password_confirmation])
+  # def after_sign_in_path_for(_resource)
+  #   users_path
   # end
 end

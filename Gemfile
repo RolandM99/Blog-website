@@ -10,7 +10,7 @@ gem 'ffi'
 gem 'rails', '~> 7.0.2', '>= 7.0.2.2'
 
 # Add devise
-gem 'devise'
+gem 'devise', '~> 4.8'
 
 gem 'rails-controller-testing'
 
