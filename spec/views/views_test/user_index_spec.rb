@@ -2,7 +2,7 @@ require 'rails_helper'
 # rubocop:disable Metrics/BlockLength
 RSpec.feature 'Logins', type: :feature do
   background { visit new_user_session_path }
-  scenario 'Page should have username of other users' do
+  scenario 'User can see username of other users' do
     @user1 = User.create(name: 'Titus', email: 'titus@gmail.com', password: 'qwerty', confirmed_at: Time.now)
     @user2 = User.create(name: 'Julie', email: 'julie@gmail.com', password: 'qwerty', confirmed_at: Time.now)
     @user3 = User.create(name: 'Manny', email: 'manny@gmail.com', password: 'qwerty', confirmed_at: Time.now)
@@ -16,7 +16,7 @@ RSpec.feature 'Logins', type: :feature do
     expect(page).to have_content 'Manny'
   end
 
-  scenario 'Page should have profile photo for each user' do
+  scenario 'User can see users profile picture' do
     @user1 = User.create(name: 'Titus', email: 'titus@gmail.com', password: 'qwerty', confirmed_at: Time.now,
                          photo: 'http/url/image')
     within 'form' do
