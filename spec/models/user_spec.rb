@@ -21,9 +21,9 @@ RSpec.describe User, type: :model do
       expect(subject).to_not be_valid
     end
 
-    it 'User should have post greater than or equal to 0' do
+    it 'User should not have a post yet' do
       subject.posts_counter = 0
-      expect(subject).to be_valid
+      expect(subject).to_not be_valid
     end
   end
 
