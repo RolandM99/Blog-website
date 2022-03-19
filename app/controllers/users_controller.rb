@@ -4,7 +4,11 @@ class UsersController < ApplicationController
   end
 
   def show
-    @id = params[:id]
-    @user = User.find(@id)
+    @user = User.find(params[:id])
+  end
+
+  def apitoken
+    @user = User.find(params[:id])
+    render json: @user.apitoken, status: :ok
   end
 end
